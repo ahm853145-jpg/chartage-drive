@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build --prefix frontend"
+  publish = "frontend/dist/carthage-drive"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

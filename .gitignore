@@ -1,0 +1,23 @@
+# Dependencies and generated frontend output
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/coverage/
+
+# Local configuration and secrets
+backend/.env
+backend/.env.local
+backend/.env.*.local
+!.env.example
+!backend/.env.example
+
+# Runtime output
+backend/logs/
+backend/uploads/cars/*
+!backend/uploads/cars/.gitkeep
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
