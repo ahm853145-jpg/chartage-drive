@@ -34,6 +34,8 @@ jobs:
         run: npm ci --prefix frontend
       - name: Build Angular app
         run: npm run build --prefix frontend -- --base-href /chartage-drive/
+      - name: Add single-page app fallback
+        run: cp frontend/dist/carthage-drive/index.html frontend/dist/carthage-drive/404.html
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
